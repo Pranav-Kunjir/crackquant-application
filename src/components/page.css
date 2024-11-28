@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1600;
+    font-style: normal;
+}
+
+.card img {
+    width: 20vh;
+    border-radius: 12px;
+}
+
+.main {
+    margin-top: 10vh;
+}
+
+.card {
+    padding: 10vh;
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    max-width: 60%;
+    margin: auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.que-info {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.que-info li {
+    margin-right: 2vh;
+}
+
+.type-strategy img {
+    width: 2vh;
+}
+
+.type-strategy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0D9488;
+    border-radius: 36px;
+    padding: 1vh;
+}
+
+.difficuly-med {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FEF9C3;
+    border-radius: 36px;
+    padding: 1vh;
+}
+
+.button {
+    color: white;
+    background-color: #2563EB;
+    border-radius: 24px;
+    padding: 15px;
+    width: 15vh;
+    box-shadow: none;
+}
+
+.solution_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.card-solution {
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.card-solution li {
+    padding-top: 5vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    padding-left: 2vh;
+}
+
+.Footer {
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Footer ul {
+    list-style: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .card {
+        padding: 5vh;
+        max-width: 80%;
+    }
+
+    .card img {
+        width: 50vw; /* Adjust image size for smaller screens */
+    }
+
+    .main {
+        margin-top: 5vh;
+    }
+
+    .button {
+        width: 40vw; /* Make button width more responsive */
+        padding: 12px;
+    }
+
+    .que-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .type-strategy, .difficuly-med {
+        flex-direction: column;
+        padding: 2vh;
+        width: 100%; /* Ensure the strategy boxes span the full width */
+    }
+
+    .card-body {
+        padding: 2vh;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .Footer {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 3vh;
+        max-width: 90%;
+    }
+
+    .card img {
+        width: 60vw; /* Adjust for very small screens */
+    }
+
+    .button {
+        width: 60vw; /* Adjust button size further */
+        padding: 10px;
+    }
+
+    .main {
+        margin-top: 3vh;
+    }
+
+    .que-info li {
+        margin-right: 1vh;
+    }
+
+    .type-strategy, .difficuly-med {
+        padding: 3vh;
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .Footer {
+        margin-top: 5vh;
+        padding: 2vh;
+    }
+}
